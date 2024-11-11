@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter # 7-Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chapter # 7-Forms</h1>
+    
+    <form action ="https://www.example.com/submit-form" method="POST">
+        <fieldset>
+            <legend> Personal Details: </legend>
+            <p>
+                First Name:
+                <input type = "text" name = "first name"
+                size = "15" maxlength = "30" required />
+            </p>
+            <p> Last Name:
+                <input type = "text" name = "last name"
+                size = "15" maxlength = "30" required />
+            </p>
+            <p> Gender: 
+                <input type = "radio" name = "gender"
+                value = "male" checked /> Male
+                <input type = "radio" name = "gender"
+                value = "female" /> Female
+            </p>
+            <p> Date of Birth: 
+                <input type = "date" name = "dob" required />
+            </p>
+            <p> Father's Name:
+                <input type = "text" name = "father's name"
+                size = "15" maxlength = "30" required />
+            </p>
+            <p> Religion:
+                <input type = "text" name = "religion"
+                size = "15" maxlength = "30" required />
+            </p>
+            <p> Nationality: 
+                <select name = "countries"multiple>
+                    <option value = "pakistan">Pakistan</option>
+                    <option value = "india">India</option>
+                    <option value = "usa">USA</option>
+                    <option value = "uk">UK</option>
+                    <option value = "china">China</option>
+                    <option value = "australia">Australia</option>
+                    <option value = "canada">Canada</option>
+                    <option value = "germany">Germany</option>
+                    <option value = "japan">Japan</option>
+                    <option value = "russia">Russia</option>
+                    <option value = "france">France</option>
+                    <option value = "italy">Italy</option>
+                    <option value = "spain">Spain</option>
+                    <option value = "mexico">Mexico</option>
+                    <option value = "other">Other</option>
+        </select>
+        <p> Province:
+            <select name = "provinces"multiples>
+                <option value = "sindh">Sindh</option>
+                <option value = "punjab">Punjab</option>
+                <option value = "balochistan">Balochistan</option>
+                <option value = "khyber">Khyber</option>
+                <option value = "fata">Fata</option>
+                <option value = "other">Other</option>
+            </select> 
+        </p>
+        <p> City:
+            <select name="cities" multiple>
+                
+                <option value = "karachi">Karachi</option>
+                <option value = "islamabad">Islamabad</option>
+                <option value = "lahore">Lahore</option>
+                <option value = "rawal-pindi">Rawal-Pindi</option>
+                <option value = "peshawar">Peshawar</option>
+                <option value = "quetta">Quetta</option>
+                <option value ="multan">Multan</option>
+                <option value = "faisalabad">Faisalabad</option>
+                <option value = "abbottabad">Abbottabad</option>
+                <option value = "sialkote">Sialkote</option>
+                <option value = "Sukkur">Sukkur</option>
+                <option value = "hyderabad">Hyderabad</option>
+                <option value = "larkana">Larkana</option>
+                <option value = "mardan">Mardan</option>
+                <option value = "other">Other</option>
+
+            </select>
+        </p>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend> Contacts:</legend>
+                <p> Email:
+                    <input type = "email" name = "email"
+                    size = "30" maxlength = "50" required />
+                </p>
+                <p> Password:
+                    <input type = "password" name = "password"
+                    size = "15" maxlength = "30" required />
+                    <br />
+                    <br />
+                    Re-enter Password:
+                    <input type = "password" name = "confirm-password"
+                    size = "15" maxlength = "30" required />
+                </p>
+                <p> Phone:
+                    <input type = "tel" name = "phone"
+                    pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required />
+                    <br />
+                    <br />
+                    Mobile:
+                    <input type = "tel" name = "mobile"
+                    pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required />
+                </p>
+                <p> Address:
+                    <textarea name = "address" rows = "5" cols = "30" required></textarea>
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend> Interests: </legend>
+            <p>
+                Interests:
+                <input type = "checkbox" name = "interests" value = "men"/> Men's Clothing
+                <br />
+                <br />
+                <input type = "checkbox" name = "interests" value = "women's clothing"/> Women's Clothing
+                <br />
+                <br />
+                <input type = "checkbox" name = "interests" value = "kids's clothing"/> Kids's clothing
+                <br />
+                <br />
+                <input type = "checkbox" name = "interests" value = "electronics"/> Electronics
+                <br />
+                <br />
+                <input type = "checkbox" name = "interests" value = "fashion"/> Fashion
+            </p>
+            <p>
+                <textarea name = "comments" rows = "5" cols = "30"> Enter your comments...</textarea>
+            </p>
+            Comments:
+            <p>
+                <input type = "submit" value = "Submit review:" />
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend> Education: </legend>
+                <p>
+                    <label for = "high-school">High School:</label>
+                    <input type = "text" name = "high-school"
+                    size = "30" maxlength = "50" required />
+                </p>
+
+                <p>
+                    <label for = "university">University:</label>
+                    <input type = "text" name = "university"
+                    size = "30" maxlength = "50" required />
+                </p>
+                <p>
+                    <label for = "graduation-year">Graduation Year:</label>
+                    <input type = "number" name = "graduation-year"
+                    min = "1900" max = "2022" required />
+                </p>
+                <p>
+                    <input type = "submit" value = "Upload" />
+                    <input type="submit"/>
+                    <br />
+                    <br />
+                    <input type = "image" src = "./red-submit-button-clip-art-at-clker.png" width="100" height="" alt = "submit-button" />
+                </p>
+        </fieldset>
+     
+    
+</body>
+</html>

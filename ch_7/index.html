@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter #7-Forms</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS styling for form elements -->
+</head>
+<body>
+    <!-- Summary:
+    * Form controls live inside a <form> element. This element usually carries the following attributes:
+    * Action attribute:
+        The <form> element always carries the action attribute.It's value is the URL of the page that will receive the 
+        information when the form is submitted.
+    * Method attribute:
+        The form can be sent using one of two methods,GET and POST.
+    1.GET- With the GET method, the values from the <form> are added to the end of the URL specified in the action attribute.
+    The following are further details about the GET method:
+       * The length of a URL is limited (2,048 characters).
+       * Never use GET to send sensitive data because (data will be visible in the URL).
+       * GET method is better for non-secure data, like query strings in Google.
+       * If the Method attribute is not used,the <form> data will be sent using the GET method.
+       * Useful for <form> submissions where a user wants to bookmark the result.
+    2.POST- With the POST method,always use POST  if the <form> data contains sensitive or personal information
+        (the POST method does not display  the submitted data in the page address field).
+        * POST has no size limitations and can be used to send large amounts of data.
+        * <form> submission with POST can not be bookmarked.
+        * Data Form a <form> is sent as name/value pairs.
+        * Form controls may be used to collect data from users. Each <form> control is given aname, and the values of the <br />
+        options they select are sent to the server.
+        <form action="https://www.example.com/submit-form" method="POST"> 
+        <form action ="https://www.example.com/submit-form" method="GET"> -->
+
+            <h1>Chapter # 7- Forms</h1>
+
+
+
+            <form action ="https://www.example.com/submit-form" method="POST">
+                <fieldset>
+                    <legend>Your Details:</legend>
+                    <p>Name:
+                        <input type="text" name="name" required 
+                        size="15"maxlength = "30"/>
+                        <br />
+                        <br />
+                       Email:
+                       <input type="email" name="email" required
+                        size="25" maxlength = "50"/> 
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Review:</legend>
+                    <p>How did you hear about us?
+                        <br />
+                        <select name="how-heard">
+                            <option value="">Select One</option>
+                            <option value="google">Google</option>
+                            <option value="friend">Friend</option>
+                            <option value="other">Other</option>
+                        </select>
+                        
+                        <p>
+                            Would you visit again?
+                            <br />
+                            <input type="radio" name="visit-again" value="yes" required/>Yes
+                            <input type="radio" name="visit-again" value="yes" required/>No 
+                            <input type="radio" name="visit-again" value="yes" required/>Maybe
+                        </p>
+                        Comments:
+                        <p>
+                           
+                            <textarea name="comments"rows="5" cols="30">Enter your comments...</textarea>
+                        </p>
+                       
+                    
+                    <br />
+                    <p><input type="checkbox" name="interests" id="interests"/>
+                        Sign me up for email updates
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit review" value="upload"/>
+                      
+                    </p>
+                   
+
+                    
+                </fieldset>
+            </form>
+
+        
+   
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter # 7-Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action ="https://www.example.com/submit-form" method="POST">
+        <fieldset>
+            <legend> VOTE FOR YOUR FAVOURITE PAKISTANI FOOD</legend>
+            <p> User Name:
+                <input type="text" name="username" 
+                size = "15" maxlength="30" placeholder ="User Name" />
+            </p>
+            I vote for:
+            <p>
+                <input type="radio" name="food" value="biryani" /> Biryani
+                <br />
+                <br />
+                <input type="radio" name="food" value="qorma" /> Qorma
+                <br />
+                <br />
+                <input type="radio" name="food" value="karahi" /> Karahi
+                <br />
+                <br />
+                <input type="radio" name="food" value="haleem" /> Haleem
+                <br />
+                <br />
+                <input type="radio" name="food" value="nihari" /> Nihari
+                <br />
+                <br />
+                <input type="radio" name="food" value="paye" /> Paye
+                <br />
+                <br />
+                <input type="radio" name="food" value="pulao" /> Pulao
+                <br />
+                <br />
+                <input type="radio" name="food" value="chapli-kebab" /> Chapli Kebab
+            </p>
+            <p>
+                <input type="submit" value="Submit review" value="upload"/>
+              
+            </p>
+
+            </fieldset>
+    </form>
+    
+</body>
+</html>

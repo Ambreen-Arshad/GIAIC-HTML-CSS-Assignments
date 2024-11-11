@@ -1,0 +1,29 @@
+*{
+    margin:auto;
+    padding:5px ;
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: white;
+    color: black;
+    border:5px solid green
+}
+  
+h1{
+    font-size: 65px;
+    color: maroon;
+    text-decoration:underline red;
+
+}
+h2,h3{
+    font-size: medium;
+    text-decoration: underline red;
+}
+
+a{
+    color:blue;
+    text-decoration:underline blue;
+}
+
+

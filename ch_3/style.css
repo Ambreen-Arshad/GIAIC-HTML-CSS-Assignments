@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color:chocolate;
+    color:whitesmoke;
+    text-align: center;
+    margin-top:auto;
+    border: 5px solid darkgreen;
+}
+
+h1{
+    font-size: 40px;
+    padding: 20px;
+    color: darkgreen;
+}
+h2{
+    font-size: 20px;
+    padding: 20px;
+    color:chartreuse;
+    text-decoration:underline;
+}
